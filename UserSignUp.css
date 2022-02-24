@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+*
+{
+    margin:0;
+    /* padding: 50px; */
+}
+body
+{
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+#tags
+{
+    color:white;
+    font-size: 15px; 
+    font-weight: 500;
+}
+#bankTitle
+{
+    font-size:2.5rem;
+    padding-left: 10px; 
+    font-weight: 500;
+}
+#bankTitle:hover
+{
+    color:#ffffff;
+}
+#tags:hover
+{
+    color:rgb(255, 255, 255);
+    background-color: rgba(255, 228, 196, 0.5);
+
+}
+.nav-link
+{
+    color:white;
+}
+.navbar
+{
+    background-image: linear-gradient(to right, rgb(195, 0, 255) , rgba(234, 0, 255, 0.418));
+}
+.navbar-brand
+{
+    color:#ffffff;
+    font-size:2.5rem;
+
+}
+
+.container .title
+{
+    font-size:25px;
+    position:relative;
+    font-weight: 500;
+}
+
+.container form .user-details
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box
+{
+    margin: 20px 0 12px 0;
+    width:470pt;
+}
+.user-details .input-box label
+{
+    display:block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input
+{
+    height:45px;
+    width:100%;
+    outline:none;
+    border-radius :5px;
+    border:1px solid gold;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.submitButton
+{
+    width:250px;
+    height:50px;
+    border:1px solid gold;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#employeeIdError,#confirmEmployeeIdError,#BirthdateEmpty,#FutureDateException,#NameError,#emailEmpty,#mobileEmpty,#NameEmpty,#NameLengthError,#BirthdateException,#FirstMobileError,#MobileError,#confirmPasswordEmpty,#emailError,#PasswordError,#confirmPasswordError,#employeeIdempty,#confirmEmployeeIdempty,#PassowrdEmpty
+{
+    color:red;
+    display:none;
+}

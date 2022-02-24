@@ -1,0 +1,127 @@
+@charset "ISO-8859-1";
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-image: linear-gradient(to top, rgb(167, 0, 218) , rgba(174, 35, 255, 0.644));
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 700px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {
+      float: left;
+    }
+    div.content {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+ 
+   .active-section
+  {
+    background-color: rgba(241, 196, 255, 0.699);
+  }
+  .active-section:hover
+  {
+    color:blueviolet;
+  }
+  .sidebar a:hover
+  {
+    background-color: azure;
+    color:rgb(65, 65, 65);
+  }
+
+
+  /* Text Boxes */
+
+.container
+{
+    max-width: 500px;
+    width: 50%;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 255));
+    padding:25px 30px;
+    border-radius: 5px;
+}
+.container .title
+{
+    font-size:25px;
+    position:relative;
+    font-weight: 500;
+}
+
+.container form .user-details
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box
+{
+    margin: 20px 0 12px 0;
+    width:350pt;
+}
+.user-details .input-box label
+{
+    display:block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input
+{
+    height:45px;
+    width:100%;
+    outline:none;
+    border-radius :5px;
+    border:1px solid gold;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.submitButton,.btn-cancel
+{
+    width:250px;
+    height:50px;
+    
+    border:1px solid gold;
+    background-color: rgb(255, 255, 255);
+}
+#NameError,#emailEmpty,#NameEmpty,#NameLengthError,#emailError,#PasswordError,#CandidateIdempty,#PasswordEmpty
+{
+    color:red;
+    display:none;
+}
+#CandidateIdError
+{
+	color:blue;
+	display:none;
+}

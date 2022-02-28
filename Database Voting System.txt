@@ -1,0 +1,20 @@
+create database VotingSystem;
+use VotingSystem;
+create Table adminTable(AdminId varchar(20),Name varchar(20),Email varchar(20),Password varchar(20));
+insert into adminTable values("ASD0001","Swathi","swathi9@gmail.com","swathiSri9*");
+select * from adminTable;
+drop table adminTable;
+create Table candidateTable(candidateId varchar(20),Name varchar(20),Email varchar(20),Title varchar(200),voteCount int);
+insert into candidateTable values("ASPC001","Swathi","swathi9@gmail.com","Automatic text to Speech Recognition",0);
+insert into candidateTable values("ASPC002","Krishna","krishna9@gmail.com","Sound  Recognition",0);
+insert into candidateTable values("ASPC003","FangLeng","fangleng9@gmail.com","Automatic Language Recognition",0);
+insert into candidateTable values("ASPC004","SriRam","sriram9@gmail.com","Speech Emotions Recognition",0);
+insert into candidateTable values("ASPC005","FangLee","fanglee9@gmail.com","Automatic Crop leaves Prediction ",0);
+select * from candidateTable;
+drop table candidateTable;
+select sum(voteCount) from candidateTable;
+create table userTable(EmployeeId varchar(20),EmployeeName varchar(20) ,DateOfBirth varchar(20),PhoneNumber varchar(20),EmailId varchar(30),Password varchar(20),voteStatus varchar(20));
+drop table userTable;
+select * from userTable;
+
+show tables;
